@@ -1,0 +1,12 @@
+class LibraryLendingMaterial { };
+	class Book : public LibraryLendingMaterial { };
+		class AudioBook : public Book { };
+		class RentalBook : public Book { };
+		class CD_ROMBook : public Book { };
+	class Record : public LibraryLendingMaterial { };
+	class Video : public LibraryLendingMaterial { };
+	class ChildrensPuppet : public LibraryLendingMaterial { };
+	class Game : public LibraryLendingMaterial { };
+		class SegaVideoGame : public Game { };
+		class SonyPlaystationVideoGame : public Game { };
+		class NintendoVideoGame : public Game { };
