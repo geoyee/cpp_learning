@@ -4,9 +4,9 @@ template <typename elemType>
 class Matrix
 {
 	template <typename T>
-	friend Matrix<elemType> operator+(const Matrix<elemType>& m1, const Matrix<elemType>& m2);
+	friend Matrix<T> operator+(const Matrix<T>& m1, const Matrix<T>& m2);
 	template <typename T>
-	friend Matrix<elemType> operator*(const Matrix<elemType>& m1, const Matrix<elemType>& m2);
+	friend Matrix<T> operator*(const Matrix<T>& m1, const Matrix<T>& m2);
 
 protected:
 	int _rows;
