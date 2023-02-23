@@ -47,7 +47,7 @@ Matrix operator*(const Matrix& m1, const Matrix& m2)
 		{
 			result(ix, jx) = 0;
 			for (int kx = 0; kx < m1.cols(); kx++)
-				result(ix, jx) += m1(ix, jx) * m2(kx, jx);
+				result(ix, jx) += m1(ix, kx) * m2(kx, jx);
 		}
 	}
 	return result;
